@@ -11,15 +11,10 @@ package kripto;
  */
 public class algoritma {
     public static char[] myList = {'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
-
     private int key;
     private char[] plaintext;
     private char[] chipertext;
-    
-    public char[] getPlaintext(){
-        return plaintext;
-    }
-    
+        
     public void setKey(int key) {
         this.key = key;
     }
@@ -31,7 +26,6 @@ public class algoritma {
     public char[] getchipertext(){
         char[] chipertext = new char[plaintext.length];
         int[] pt = new int[plaintext.length];
-        int[] ch = new int[plaintext.length];
         int k = 0;
         
         for(int x = 0; x < plaintext.length; x++){
